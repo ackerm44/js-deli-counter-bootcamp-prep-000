@@ -17,9 +17,9 @@ function nowServing(array) {
 
 function currentLine(array) {
   if (array.length > 0) {
-    var string = "The line is currently: 1. " + array[0] + ", ";
+    var string = "The line is currently: 1. " + array[0];
     for (var i = 1; i < array.length; i++) {
-      string = string + (i + 1) + ". " + array[i]
+      string = string  + ", " + (i + 1) + ". " + array[i]
     }
   } else if (array.length == 0) {
       return "The line is currently empty.";
