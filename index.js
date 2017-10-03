@@ -11,7 +11,7 @@ function nowServing(array) {
   } else {
     array.shift();
     return "Currently serving " + array[0] + ".";
-    
+
   }
 }
 
