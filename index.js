@@ -12,7 +12,6 @@ function nowServing(array) {
     var first = array[0];
     array.shift();
     return "Currently serving " + first + ".";
-
   }
 }
 
