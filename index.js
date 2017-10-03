@@ -1,7 +1,7 @@
 var katzDeli = [];
 
-function takeANumber(katzDeliLine, name) {
-  katzDeli.push(name);
+function takeANumber(array, name) {
+  array.push(name);
   console.log("Welcome, " + name + ". You are number " + katzDeli[name] + " in line.")
 }
 
@@ -12,6 +12,16 @@ function nowServing(array) {
     return "Currently serving " + array[0] + ".";
     array.shift();
   }
+}
 
+function currentLine(array) {
+  for (i = 0; i < array.length; i++) {
+    if (i > 0) {
+      return "The line is currently: " + i + 1 + ". " + array[i] + ", "
+    } else {
+      return "The line is currently empty"; 
+    }
+    
+  }
 
 }
