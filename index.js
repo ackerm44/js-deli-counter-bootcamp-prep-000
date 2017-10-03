@@ -16,11 +16,12 @@ function nowServing(array) {
 }
 
 function currentLine(array) {
-  for (var i = 0; i < array.length; i++) {
-    var string = "The line is currently: ";
-    if (array.length > 0) {
+  var string = "The line is currently: ";
+  if (array.length > 0) {
+    for (var i = 0; i < array.length; i++) {
       string = string + (i + 1) + ". " + array[i] + ", "
-    } else if (array.length == 0) {
+    }
+  } else if (array.length == 0) {
       return "The line is currently empty.";
     }
 
