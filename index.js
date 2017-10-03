@@ -19,7 +19,7 @@ function currentLine(array) {
     var string = "The line is currently: ";
     if (array.length > 0) {
       string = string + (i + 1) + ". " + array[i] + ", "
-    } else {
+    } else if (array.length == 0) {
       return "The line is currently empty.";
     }
 
