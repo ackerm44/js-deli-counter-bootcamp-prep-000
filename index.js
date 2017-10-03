@@ -5,7 +5,7 @@ function takeANumber(katzDeliLine, name) {
   console.log("Welcome, " + name + ". You are number " + katzDeli[name] + " in line.")
 }
 
-function nowServing(katzDeliLine) {
+function nowServing(array) {
   if (katzDeli.length == 0) {
     return "There is nobody waiting to be served!"
   } else {
