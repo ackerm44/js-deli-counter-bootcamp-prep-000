@@ -24,5 +24,5 @@ function currentLine(array) {
   } else if (array.length == 0) {
       return "The line is currently empty.";
     }
-
+   return string; 
 }
